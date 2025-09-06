@@ -236,3 +236,24 @@ if (checkoutBtn) {
 renderCart();
 
 
+// Product Filter
+const filterBtns = document.querySelectorAll(".filter-btn");
+const productCards = document.querySelectorAll(".product-card");
+
+filterBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    // active button change
+    filterBtns.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    const category = btn.getAttribute("data-filter");
+
+    productCards.forEach(card => {
+      if (category === "all" || card.getAttribute("data-category") === category) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+});

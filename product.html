@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Mari-Aura</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">𝖒𝖆𝖗𝖎-𝖆𝖚𝖗𝖆</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+      <li><a href="account.html"><i class="fas fa-user"></i> Account</a></li>
+    </ul>
+  </nav>
+
+  <!-- Products Page -->
+  <section class="products-page">
+    <h2 class="products-heading">Our Collection</h2>
+    <p class="products-subtext">Choose from the latest categories</p>
+
+    <!-- Category Filter -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="men">Men</button>
+      <button class="filter-btn" data-filter="women">Women</button>
+      <button class="filter-btn" data-filter="new">New Arrivals</button>
+      <button class="filter-btn" data-filter="sale">Sale</button>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="products-grid">
+      <div class="product-card" data-category="men">
+        <img src="./image/product1.jpg" alt="Product 1">
+        <div class="product-info">
+          <h3>Men’s Jacket</h3>
+          <p>$49.99</p>
+          <button class="add-to-cart" data-name="Men’s Jacket" data-price="49.99" data-image="./image/product1.jpg">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="women">
+        <img src="./image/product2.jpg" alt="Product 2">
+        <div class="product-info">
+          <h3>Women’s Dress</h3>
+          <p>$59.99</p>
+          <button class="add-to-cart" data-name="Women’s Dress" data-price="59.99" data-image="./image/product2.jpg">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="new">
+        <img src="./image/product3.jpg" alt="Product 3">
+        <div class="product-info">
+          <h3>New Hoodie</h3>
+          <p>$39.99</p>
+          <button class="add-to-cart" data-name="New Hoodie" data-price="39.99" data-image="./image/product3.jpg">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="sale">
+        <img src="./image/product4.jpg" alt="Product 4">
+        <div class="product-info">
+          <h3>Discount T-Shirt</h3>
+          <p>$29.99</p>
+          <button class="add-to-cart" data-name="Discount T-Shirt" data-price="29.99" data-image="./image/product4.jpg">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
